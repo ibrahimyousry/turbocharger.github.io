@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INVOICE</title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+      <style>
+          
+          .footer .bottom-footer a {
+              -webkit-transition:all .2s ease-in-out;
+              -moz-transition:all .2s ease-in-out;
+              transition:all .2s ease-in-out;
+          }
+          
+          .footer .bottom-footer a:hover {
+              color: #9b9696 !important;
+          }
+          
+          
+          
+          @media (max-width:1200px){
+              .header-tabl .little-font{
+                  font-size: 14px !important;
+              }
+              
+              .header-tabl .sec-table{
+                  font-size: 15px !important;
+              }
+              
+              .arrow-sp {
+                    width: 60% !important;
+                    left: 22% !important;
+              }
+              
+              .left-par {
+                      left: 21.7%!important;
+              }
+              
+              .right-par {
+                      right: 17.5% !important;
+              }
+              
+              .items-tabl .the-table thead th, .items-tabl .the-table thead td{
+                  font-size: 13px !important;
+              }
+              
+              .items-tabl .the-table tbody th, .items-tabl .the-table tbody td{
+                  font-size: 14px !important;
+              }
+              
+              .items-tabl .the-table tbody th.price, .items-tabl .the-table tbody td.price{
+                  font-size: 16px !important;
+              }
+              
+              .footer .bottom-footer span {
+                  right: -8px !important;
+              }
+              
+              .footer .bottom-footer a,.footer .bottom-footer th {
+                      font-size: 13px !important;
+              }
+            }
+          
+          @media (max-width:991px){
+              
+              .md-screen{
+                  display: block !important;
+              }
+              
+              .footer .bottom-footer .bg-screen{
+                  display: none;
+              }
+              
+              .header-tabl .little-font{
+                  font-size: 12px !important;
+              }
+              
+              .header-tabl .sec-table {
+    font-size: 13px !important;
+}
+              
+              .arrow-sp {
+    width: 40% !important;
+    left: 33% !important;
+}
+              
+              .left-par {
+    left: 32.7%!important;
+}
+              
+              .right-par {
+    right: 26.5% !important;
+}
+              
+              .items-tabl .the-table thead th, .items-tabl .the-table thead td{
+                  font-size: 13px !important;
+              }
+              
+              .items-tabl .the-table tbody th, .items-tabl .the-table tbody td{
+                  font-size: 13px !important;
+              }
+              
+              .items-tabl .the-table tbody th.price, .items-tabl .the-table tbody td.price{
+                  font-size: 15px !important;
+              }
+              
+              .items-tabl .sum-table  th{
+                  font-size: 13px !important;
+              }
+              
+              .items-tabl .sum-table  td{
+                  font-size: 15px !important;
+              }
+              
+              .info-tabl .the-info thead td {
+                  font-size: 14px !important;
+              }
+              
+              .info-tabl .the-info tbody td {
+                  font-size: 13px !important;
+              }
+              
+              .footer .thanks td{
+                   font-size: 25px !important;
+               }
+              
+              .footer .bottom-footer a,.footer .bottom-footer th {
+                      font-size: 12px !important;
+              }
+               
+            }
+          
+           @media (max-width:767px){
+              .header-tabl .little-font{
+                  font-size: 10px !important;
+              }
+               
+               .header-tabl div {
+                       padding: 0 30px 50px !important;
+               }
+              
+              .header-tabl .sec-table {
+    font-size: 13px !important;
+}
+              
+              .arrow-sp {
+    display: none;
+}
+              
+              .left-par {
+    display: none;
+}
+              
+              .right-par {
+    display: none;
+}
+               
+               .inv-banner {
+                       height: 70px !important;
+    width: 80px !important;
+            font-size: 14px!important;
+               }
+               
+               .items-tabl div {
+    padding: 50px 30px !important;
+}
+               
+               .items-tabl .the-table thead th, .items-tabl .the-table thead td{
+                  font-size: 12px !important;
+                   display: block;
+                   border-bottom: none !important;
+                   width: 100% !important;
+              }
+               
+               .items-tabl .the-table thead td:last-of-type{
+                   border-bottom: 1.5px solid #eaeaea !important;
+               }
+              
+              .items-tabl .the-table tbody th, .items-tabl .the-table tbody td{
+                  font-size: 12px !important;
+                  display: block;
+                   padding:  15px !important;
+                  width: 100% !important;
+              }
+               
+               .items-tabl .the-table tbody td:last-of-type{
+                   border-bottom: 1.5px solid #eaeaea !important;
+               }
+              
+              
+              .items-tabl .the-table tbody th.price, .items-tabl .the-table tbody td.price{
+                  font-size: 13px !important;
+              }
+               
+               .items-tabl .sum-table  th{
+                  font-size: 12px !important;
+              }
+              
+              .items-tabl .sum-table  td{
+                  font-size: 14px !important;
+              }
+               
+               .items-tabl .sum-table {
+                   margin-left: inherit !important;
+                   
+                   width: 60% !important;
+               }
+               
+               .info-tabl div {
+                   padding: 50px 30px !important;
+               }
+               
+               .bg-screen{
+                   display: none;
+               }
+               
+               .sm-screen {
+                   display: block !important;
+               }
+               
+               .info-tabl .the-info tbody td {
+    font-size: 12px !important;
+}
+               
+               .info-tabl .the-info thead td {
+    font-size: 13px !important;
+}
+               
+               .footer div{
+                   padding: 50px 30px !important;
+               }
+               
+               .footer .thanks td{
+                   font-size: 20px !important;
+               }
+               
+            }
+          
+          @media (max-width:450px){
+              
+              .footer .thanks td{
+                   font-size: 17px !important;
+               }
+               
+              
+              .header-tabl .little-font{
+                  font-size: 10px !important;
+              }
+               
+               .header-tabl div {
+                       padding: 0 10px 50px !important;
+               }
+              
+              .header-tabl .sec-table {
+    font-size: 10px !important;
+}
+              
+              .items-tabl .sum-table  th{
+                  font-size: 11px !important;
+              }
+              
+              .items-tabl .sum-table  td{
+                  font-size: 13px !important;
+              }
+              
+              .footer .bottom-footer a,.footer .bottom-footer th,.footer .bottom-footer td {
+                      font-size: 11px !important;
+                  display: block;
+                  padding: 5px 0;
+              }
+            }
+          
+      </style>
+      
+    </head>
+    
+    <body style="font-family: sans-serif;">
+        
+        <div style="    box-shadow: 0px 3px 10px 0px #ddd;">
+        
+      <!--start first section-->
+        
+        <table width="100%" class="header-tabl" style="border-spacing: 0px;">
+          <tr>
+            <td>
+              <div style="padding: 0 100px 50px; background: #f6f6f6;">
+                <table width="100%">
+                  <tr>
+                    <td class="inv-banner" style="    background: #e97d1b;
+    height: 101px;
+    width: 111px;
+    color: #fff;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 15px;">INVOICE</td> 
+                      <td style="text-align: right;color: #363636;
+    font-size: 15px;" class="little-font">Order #201975 .August 29,2019</td>
+                  </tr>  
+                </table>  
+                  <table class="sec-table" width="100%" style=" padding: 60px 0;position: relative;">
+                      
+                    <tr>
+                      <td style=" color: #e97d1b;">PREPARED FOR <span class="arrow-sp" style="position: absolute;
+    top: 34%;
+    width: 70%;
+    height: 1px;
+    background: #e97d1b;
+    left: 16%;"></span>
+                        <span class="left-par" style="    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #e97d1b;
+    border-radius: 50%;
+    top: 32.4%;
+    left: 16%;"></span> 
+                          
+                          <span class="right-par" style="    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #e97d1b;
+    top: 32%;
+    right:13.5%;"></span> </td>  
+                        <td style=" color: #e97d1b; text-align: right;">PAYMENT TO</td>  
+                    </tr>
+                      <tr>
+                      <td style="padding: 11px 0;">Mandeep Dalvair</td>  
+                        <td style="text-align: right;padding: 11px 0;">Turbo Vanes</td>  
+                    </tr>
+                      
+                      <tr>
+                      <td style=""><a href="mandeepdalvair@gmail.com" style="color: #685f5f;text-decoration: none">mandeepdalvair@gmail.com</a> </td>  
+                        <td style="text-align: right"><a href="info@turbovanesltd.com" style="color: #685f5f;text-decoration: none;">info@turbovanesltd.com</a> </td>  
+                    </tr>
+                      
+                      
+                  </table>
+              </div> 
+            </td>  
+          </tr>
+        </table>
+        
+        <!--start second section-->
+        
+        <table width="100%" class="items-tabl">
+          <tr>
+            <td>
+              <div style="padding: 50px 100px;">
+                <table class="the-table" style="text-align:left;    border-spacing: 0;">
+                  <thead>
+                      <tr>
+                      
+                    <th style="     width: 50%;
+    padding: 12px 15px;
+    border-bottom: 1.5px solid #eaeaea;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bababa;">ITEM</th>  
+                      <td style="    width: 16.66667%;
+    padding: 12px 15px;
+    border-bottom: 1.5px solid #eaeaea;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bababa;">QTY</td>
+                      <td style="    width: 16.66667%;
+    padding: 12px 15px;
+    border-bottom: 1.5px solid #eaeaea;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bababa;">PRICE</td>
+                      <td style="    width: 16.66667%;
+    padding: 12px 15px;
+    border-bottom: 1.5px solid #eaeaea;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bababa;">SUBTOTAL</td>
+                          
+                        </tr>
+
+                  </thead> 
+                    <tbody>
+                      <tr>
+                        <th style="    width: 50%;
+        padding: 30px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;">Turbo Acturator for Alfa-Romeo 147 1.6 Petrol AR32104 120 Garrett 803956-5003S</th>  
+                          <td style="    width: 16.66667%;
+        padding: 30px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;">1</td>
+                           <td class="price" style="  width: 16.66667%;
+        padding: 30px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;">$390</td>
+                           <td class="price" style="    width: 16.66667%;
+        padding: 30px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;">$390</td>
+                      </tr>
+                        
+                         <tr>
+                        <th style="    width: 50%;
+        padding: 30px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;">Turbo Acturator for Alfa-Romeo 147 1.6 Petrol AR32104 120 Garrett 803956-5003S</th>  
+                          <td style="    width: 16.66667%;
+        padding: 30px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;">1</td>
+                           <td class="price" style="    width: 16.66667%;
+        padding: 30px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;">$390</td>
+                           <td class="price" style="    width: 16.66667%;
+        padding: 30px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;">$390</td>
+                      </tr>
+                        
+                    </tbody>
+                </table>
+                  
+                  <table width="30%" class="sum-table" style="margin-left: auto;text-align: left; padding: 30px 0;">
+                    <tr>
+                      <th style="font-size: 14px;
+    font-weight: 700;
+    color: #bababa;
+    padding-bottom: 12px;">SUBTOTAL</th> 
+                        <td style="    font-size: 17px;font-weight: 400; padding-bottom: 12px;">$840</td>
+                    </tr>
+                      <tr>
+                      <th style="font-size: 14px;
+    font-weight: 700;
+    color: #bababa;
+    padding-bottom: 12px;">SHIPPING</th> 
+                        <td style="    font-size: 17px;font-weight: 400; padding-bottom: 12px;">$10</td>
+                    </tr>
+                      <tr>
+                      <th style="font-size: 14px;
+    font-weight: 700;
+    color: #bababa;
+    padding-bottom: 12px;">TOTAL</th> 
+                        <td class="price" style="    font-size: 17px;font-weight: 700; color: #db2d2e; padding-bottom: 12px;">$855</td>
+                    </tr>
+                  </table>
+                  
+              </div>  
+            </td>  
+          </tr>
+        </table>
+            
+            <!--start third section-->
+            
+            <table width="100%" class="info-tabl">
+              <tr>
+                <td>
+                  <div style="padding: 50px 100px;">
+                    <table class="the-info bg-screen" style="border-spacing: 0px;" width="100%">
+                      <thead>
+                        <tr>
+                        <td style="    font-weight: 600;
+    color: #e97d1b;
+    padding: 15px 0;
+    font-size: 15px;
+    width: 50%;
+    border-bottom: 1.5px solid #ddd;">Shipping Address</td> 
+                            <td style="    font-weight: 600;
+    color: #e97d1b;
+    padding: 15px 0;
+    font-size: 15px;
+    width: 50%;
+    border-bottom: 1.5px solid #ddd;">Billing Address</td> 
+                        </tr>
+                      </thead> 
+                        <tbody>
+                          <tr>
+                            <td style="    font-size: 14px;
+    padding-top: 20px;">Mandeep Singh,Office 280,</td>  
+                              <td style="font-size: 14px;
+    padding-top: 20px;">Mandeep Singh</td>  
+                          </tr>
+                            
+                            <tr>
+                            <td style="    font-size: 14px;padding: 3px 0;">51 Pinfold Street,Office 280,</td>  
+                              <td style="font-size: 14px;padding: 3px 0;">Office 280</td>  
+                          </tr>
+                            
+                             <tr>
+                            <td style="    font-size: 14px;padding: 3px 0;">Birmingham Asian Directory</td>  
+                              <td style="font-size: 14px;padding: 3px 0;">51 Pinfold Street</td>  
+                          </tr>
+                            
+                             <tr>
+                            <td style="    font-size: 14px;padding: 3px 0;">B2 4AY,</td>  
+                              <td style="font-size: 14px;padding: 3px 0;">Office 280</td>  
+                          </tr>
+                            
+                             <tr>
+                            <td style="    font-size: 14px;padding: 3px 0;">01215586868</td>  
+                              <td style="font-size: 14px;padding: 3px 0;">Birmingham Asian Directory</td>  
+                          </tr>
+                            
+                             <tr>
+                            <td style="    font-size: 14px;padding: 3px 0;">info@turbovanesltd.com</td>  
+                              <td style="font-size: 14px;padding: 3px 0;">B2 4AY</td>  
+                          </tr>
+                            
+                        </tbody>
+                    </table>
+                      
+                      <table class="sm-screen the-info" style="display: none;">
+                        <thead>
+                          <tr>
+                            <td style="    font-weight: 600;
+    color: #e97d1b;
+    padding: 15px 0;
+    font-size: 15px;
+    width: 50%;
+    border-bottom: 1.5px solid #ddd;">Shipping Address</td> 
+                          </tr>  
+                        </thead>
+                          <tbody>
+                            <tr>
+                              <td style="    font-size: 14px;
+    padding-top: 20px;">Mandeep Singh,Office 280,</td>  
+                            </tr>
+                              
+                              <tr>
+                              <td style="    font-size: 14px;padding: 3px 0;">51 Pinfold Street,Office 280,</td>   
+                            </tr>
+                              
+                              <tr>
+                             <td style="    font-size: 14px;padding: 3px 0;">Birmingham Asian Directory</td> 
+                            </tr>
+                              
+                              <tr>
+                               <td style="    font-size: 14px;padding: 3px 0;">B2 4AY,</td> 
+                            </tr>
+                              
+                              <tr>
+                             <td style="    font-size: 14px;padding: 3px 0;">01215586868</td>  
+                            </tr>
+                              
+                              <tr>
+                             <td style="    font-size: 14px;padding: 3px 0;">info@turbovanesltd.com</td>  
+                            </tr>
+                              
+                              
+                              
+                          </tbody>
+                      </table>
+                      
+                      
+                      <table class="sm-screen the-info" style="display: none;">
+                        <thead>
+                          <tr>
+                            <td style="    font-weight: 600;
+    color: #e97d1b;
+    padding: 15px 0;
+    font-size: 15px;
+    width: 50%;
+    border-bottom: 1.5px solid #ddd;">Billing Address</td> 
+                          </tr>  
+                        </thead>
+                          <tbody>
+                            <tr>
+                              <td style="font-size: 14px;
+    padding-top: 20px;">Mandeep Singh</td>  
+                            </tr>
+                              
+                              <tr>
+                               <td style="font-size: 14px;padding: 3px 0;">Office 280</td>  
+                            </tr>
+                              
+                              <tr>
+                             <td style="font-size: 14px;padding: 3px 0;">51 Pinfold Street</td>  
+                            </tr>
+                              
+                              <tr>
+                               <td style="font-size: 14px;padding: 3px 0;">Office 280</td>  
+                            </tr>
+                              
+                              <tr>
+                             <td style="font-size: 14px;padding: 3px 0;">Birmingham Asian Directory</td>  
+                            </tr>
+                              
+                              <tr>
+                             <td style="font-size: 14px;padding: 3px 0;">B2 4AY</td>  
+                            </tr>
+                              
+                              
+                              
+                          </tbody>
+                      </table>
+                      
+                  </div>  
+                </td>  
+              </tr>
+            </table>
+            
+            <!--start footer -->
+            
+            
+            <table class="footer" width="100%">
+              <tr>
+                <td>
+                  <div style="padding: 50px 100px">
+                    <table class="thanks" width="100%">
+                      <tr>
+                        <td style="font-size: 30px;
+    color: #363636; padding: 20px 0;    border-bottom: 1.5px solid #ddd;">Thanx for using turbovanes.loc!</td>  
+                      </tr>  
+                    </table>  
+                      
+                      
+                      <table class="bottom-footer" width="100%" style="text-align: left;">
+                        <tr class="bg-screen">
+                          
+                            <th style="width: 45%;
+    color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;">©Turbovanes LTD. 2019</th>
+                            
+                            <td><a style="color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;position: relative;" href="www.turbovanesltd.com">www.turbovanesltd.com   <span style="position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #ea8747;
+    border-radius: 50%;
+    top: 7px;
+    right: -25px;"></span></a></td>
+                            
+                            <td><a style="color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;position: relative;"  href="info@turbovanesltd.com">info@turbovanesltd.com  <span style="position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #ea8747;
+    border-radius: 50%;
+    top: 7px;
+    right: -25px;"></span></a></td>
+                            
+                            <td><a style="color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;"  href="01215586868">01215586868</a></td>
+                           
+                        </tr>
+                          
+                          <tr class="md-screen" style="display: none;">
+                            <th style="width: 100%;
+    color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0; text-align: center;">©Turbovanes LTD. 2019</th>
+                          </tr>
+                          
+                          <tr class="md-screen" style="display: none;">
+                              <td width="38%"><a style="color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;position: relative;" href="www.turbovanesltd.com">www.turbovanesltd.com</a></td>
+                            
+                            <td width="38%"><a style="color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;position: relative;"  href="info@turbovanesltd.com">info@turbovanesltd.com </a></td>
+                            
+                            <td width="24%"><a style="color: #e97d1b;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;"  href="01215586868">01215586868</a></td></tr>
+                          
+                      </table>
+                      
+                  </div>  
+                </td>  
+              </tr>
+            </table>
+            
+        </div>
+
+    </body>
+    
+    
+</html>
